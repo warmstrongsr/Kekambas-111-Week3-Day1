@@ -7,9 +7,9 @@ class Cart():
         
     def add_to_cart(self, new_item):
         self.cart.append(new_item)
-    
+    #print
     def remove_from_cart(self):
-        pass
+        #self.cart - self.cart remove?pass
     
     def show_cart(self):
         pass
@@ -33,7 +33,9 @@ def run():
         ask = input('What would you like to do? Add/Remove/Show/Quit ').lower()
         if ask == 'quit':
             break
-        elif ask == 'add':
+        elif ask == 'add':#backwards I think (flip)
             item = input('What would you like to add? ')
             my_cart.add_to_cart(item)
+            #remove
+            #show?
             
