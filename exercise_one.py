@@ -23,7 +23,7 @@ class Cart:
         for item in self.cart:
             print(f"{item.name} - {item.quantity} - ${item.price}")
             total_price += item.price * item.quantity
-        print(f"Total Price: ${total_price}")
+        print(f"Total Price: ${total_price:.2f}")
     
 class Product:
     def __init__(self, name, quantity, price):
